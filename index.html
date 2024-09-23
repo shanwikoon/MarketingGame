@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Mastery: Applying the 4Ps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        #game-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        #metrics-table th, #metrics-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        #metrics-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #choices button {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        #feedback {
+            margin-bottom: 40px;
+            font-style: italic;
+            background-color: #f9f9f9;
+            padding: 15px;
+        }
+        #question {
+            font-size: 1.5em; /* Make question text bigger */
+            font-weight: bold; /* Make question text bold */
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h2>Marketing Simulation</h2> <!-- Subtitle in red -->
+        <h1>Marketing Mastery: Applying the 4Ps</h1>
+        <p>Make strategic marketing decisions to balance profit, brand reputation, customer satisfaction, and market share. Maximize your business success by mastering the 4Ps.</p>
+        
+        <table id="metrics-table">
+            <tr>
+                <th>Profit</th>
+                <th>Brand Reputation</th>
+                <th>Customer Satisfaction</th>
+                <th>Market Share</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td id="profit">50</td>
+                <td id="brandReputation">50</td>
+                <td id="customerSatisfaction">50</td>
+                <td id="marketShare">50</td>
+                <td id="score">0</td>
+            </tr>
+        </table>
+
+        <div id="feedback"></div> <!-- Decision Outcome section -->
+        <div id="question"></div>  <!-- Updated question style -->
+        <div id="choices"></div>
+    </div>
+
+    <script src="scenarios.js"></script>
+    <script src="game_logic.js"></script>
+</body>
+</html>
